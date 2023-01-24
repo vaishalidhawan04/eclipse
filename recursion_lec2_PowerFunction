@@ -1,0 +1,20 @@
+package recursion_lec2;
+import java.util.*;
+public class PowerFunction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println(Power(a,b));
+	}
+	public static int Power(int a, int b) {
+		if(b==1) {
+			return a;
+		}
+		int p=Power(a,b-1);
+		return p*a;
+	}
+
+}
