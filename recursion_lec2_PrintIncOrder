@@ -1,0 +1,18 @@
+package recursion_lec2;
+import java.util.Scanner;
+public class PrintIncOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		PrintIncOrder(N);
+	}
+	public static void PrintIncOrder(int N) {
+		if(N==0) {
+			return;
+		}
+		PrintIncOrder(N-1);
+		System.out.println(N);
+	}
+}
