@@ -1,0 +1,30 @@
+package recursion_lec4;
+import java.util.*;
+public class Leetcode_Q22 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int op=0;
+		int cl=0;
+		int n=3;
+		List<String> ll=new ArrayList<>();
+		GenerateParanthesis(n,"",op,cl,ll);
+		System.out.println(ll);
+
+	}
+	public static void GenerateParanthesis(int n, String ans, int op, int cl ,List<String> ll) {
+		
+		if(op==n && cl==n) {
+			//System.out.print(ans+" ");
+			ll.add(ans);
+			return;
+		}
+		if(op<n) {
+			GenerateParanthesis(n, ans+"(",op + 1,cl,ll);
+		}
+		if(cl<op) {
+			GenerateParanthesis(n, ans+")",op, cl+1,ll);
+		}
+	}
+
+}
