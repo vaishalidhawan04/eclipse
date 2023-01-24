@@ -1,0 +1,20 @@
+package recursion_lec3;
+
+public class Count_Subsequences {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	static int c=0;
+//	public static int CountSub(String ques) {
+//		
+//		if(ques.length()==0) {
+//			c++;
+//			return c;
+//		}
+//		char ch=ques.charAt(0);
+		//C
+	}
+
+//}
