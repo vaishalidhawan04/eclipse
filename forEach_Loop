@@ -1,0 +1,17 @@
+package array_list;
+import java.util.ArrayList;
+public class For_Each_Loop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> list=new ArrayList<>();
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		System.out.println(list);
+		for(int v:list) {
+			System.out.print(v + " ");
+		}
+	}
+
+}
