@@ -1,0 +1,29 @@
+//Q-->PrintNosDecreasing
+
+package recursion_lec1;
+
+public class PrintNosDecreasing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		print(n);
+	}
+	public static void print(int n) {
+		if(n>=1) {
+			System.out.println(n);
+			print(n-1);
+			n--;
+		}
+	}
+	
+	//Sir's Way
+//	public static void DecOrder(int n) {
+//		if(n==0) {
+//			return;
+//		}
+//		System.out.println(n);
+//		print(n-1);
+//	}
+
+}
