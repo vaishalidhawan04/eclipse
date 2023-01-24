@@ -1,0 +1,20 @@
+//Q-->Decreasing Then Increasing Order
+package recursion_lec2;
+
+public class DecThenIncOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		DecThenIncOrder(n);
+	}
+	public static void DecThenIncOrder(int n) { 
+		if(n==0) {
+			return;
+		}
+		System.out.println(n);
+		DecThenIncOrder(n-1);
+		System.out.println(n);
+	}
+
+}
