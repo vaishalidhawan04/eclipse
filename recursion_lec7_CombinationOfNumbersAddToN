@@ -1,0 +1,24 @@
+package recursion_lec7;
+
+public class NumbersAddTo_N_Combination {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] coin= {2,3,5};
+		int amount =10;
+		PermutationAddToN(coin,amount,"",0);
+	}
+	public static void PermutationAddToN(int[] coin, int amount, String ans,int i){
+		if(amount==0) {
+			System.out.println(ans);
+			return;
+		}
+		for(;i<coin.length ; i++) {
+			if(amount>=coin[i]) {
+				PermutationAddToN(coin, amount-coin[i], ans+coin[i],i);//we are calling using i because infinite supply hai so usi jagah se call lag skta hai but usse pehle ki index se nahi lagega
+			}
+		}
+		
+	}
+
+}
